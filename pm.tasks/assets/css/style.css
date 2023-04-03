@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+.container {
+    display: flex; 
+}
+.title {
+    background-color: rgb(217, 243, 243);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title .menu {
+    display: flex;
+    width: 60%;
+    height: 10%;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.title .start h3 {
+    color: black; 
+    margin-left: 1%; 
+    width: 210px;
+    font-size: 30px;
+}
+.container .title .menu ul{
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+}
+
+.title ul li{
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.title ul li a{
+    text-decoration: none;
+    padding: 0%;
+    flex-wrap: wrap;
+    color: black; 
+    font-size: 20px;
+}
+
+.title .menu button {
+    border-radius: 17%;
+    border: solid; border-collapse: collapse;
+    border: 1%; 
+    padding: 2%; 
+    margin: 1% 15%; 
+    display: flex;
+    justify-content: flex-end;
+}
+.title button a{
+    text-decoration: none;
+    color: black; 
+}
+.title button:hover{
+    letter-spacing: 2px;
+}
+.main {
+    display: flex;
+    padding: 10%;  
+}
+.info {
+    padding: 6%;
+}
+.price {
+    display: flex;
+}
+.price p{
+    padding:3%;
+    margin: 0px;
+}
+.info h2{
+    font-size: 45px;
+    margin: 0px;
+}
+.info span{
+    color: rgb(94, 94, 94);
+    margin: 0%;
+}
+.main .end input{
+    width: 12%;
+}
+
+.main .end button{ 
+    padding: 1%;
+}
+
+.main .end button a{
+    text-decoration: none;
+    color: black;
+}
+
+.main .end button:hover{
+    background-color: black; 
+    color: white;
+    transition: .35s;
+}
+
+.products {
+    background-color: rgb(222, 238, 253);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 5%; 
+}
+
+.products .items {
+    background-color: rgb(253, 253, 253);
+    padding:20px;
+    margin: 10px; 
+}
+
+
+.products .items div img{
+    margin: 0%;
+    padding: 0%; 
+    width: 100%;
+    height: 100%;
+}
+
+.products .items div p{
+    font-size: 12px;
+}
+.products .items div button:hover{
+    background-color: black;
+    color: white; 
+    transition: .35s;
+}
+
+.title .menu-bar {
+    padding: 1%; 
+    background-color: darkcyan;
+    color: rgb(255, 255, 255);
+    font-size: 18px; 
+    align-items: center;
+    display: none; 
+    margin: 2% 0;
+} 
+
+.col-3{
+    width: calc(23%);
+}
+
+@media (max-width:1128px){
+    .col-lg-6{
+        width: calc(47%);
+    }
+}
+
+@media (max-width:768px){
+    .col-md-6{
+        width: calc(47%);
+    }
+
+    .main {
+        display: block;
+    }
+    .title .start h3{
+        font-size: 22px;
+    }
+    .main .photo img{
+        width: 320px;
+        height: 320px;
+    }
+    /* .products .items{
+        width: calc(100%/2);
+    } */
+    .title .menu {
+        display: none;
+    }
+    .title .menu-bar{
+        display: flex;
+    }
+}
+
+@media (max-width:757px) {
+    .title .menu {
+        display: none; 
+    }
+
+    .col-sm-12{
+        width: 100%;
+    }
+}
+
+
+/* .col-1{
+    width: calc(100%*1/12);
+}
+
+.col-2{
+    width: calc(100%*2/12);
+} */
+
